@@ -1,0 +1,39 @@
+<ng-container *ngIf="dataSource">
+  <div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="data">
+        <mat-header-cell *matHeaderCellDef> Data </mat-header-cell>
+        <mat-cell *matCellDef="let a"> {{a.data }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="a11">
+        <mat-header-cell *matHeaderCellDef> A11 </mat-header-cell>
+        <mat-cell *matCellDef="let a"> {{a.A11}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="a12">
+        <mat-header-cell *matHeaderCellDef> A12 </mat-header-cell>
+        <mat-cell *matCellDef="let a"> {{a.A12}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="a13">
+        <mat-header-cell *matHeaderCellDef> A13 </mat-header-cell>
+        <mat-cell *matCellDef="let a"> {{a.A13}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="a14">
+        <mat-header-cell *matHeaderCellDef> A14 </mat-header-cell>
+        <mat-cell *matCellDef="let a"> {{a.A14}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="a15">
+        <mat-header-cell *matHeaderCellDef> A15 </mat-header-cell>
+        <mat-cell *matCellDef="let a"> {{a.A15}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+</ng-container>
